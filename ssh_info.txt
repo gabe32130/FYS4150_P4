@@ -1,0 +1,21 @@
+Send files from my computer to UiO computer with SCP:
+scp <file name> gabrierg@login.astro.uio.no:/uio/hume/student-u/gabrierg/<folder name>
+
+SSH login:
+ssh gabrierg@login.astro.uio.no
+ssh gabrierg@<computer name>.uio.no
+
+Run MPI:
+module load Intel_parallel_studio
+
+Build C++ program:
+mpiicc <file name> -o <build file name>
+
+Run program:
+mpirun -np <desired core number> ./<build file name> <command line arguments>
+
+View output file:
+emacs <output file name>
+
+Send files back on e-mail:
+mail -a <output file name> -s <"Mail title"> gabrierg@astro.uio.no < /dev/null
